@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/api/pix", "destination": "/api/index?r=pix" },
+    { "source": "/api/webhook", "destination": "/api/index?r=webhook" },
+    { "source": "/api/status/:id", "destination": "/api/index?r=status&id=:id" }
+  ]
+}
