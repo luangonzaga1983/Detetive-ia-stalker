@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const GATEWAY = 'https://app.sigilopay.com.br/api/v1/gateway/pix/receive';
 const PLANS = {
   single: { id: 'plan-single', name: 'Acesso Unico', price: 9.9 },
-  lifetime: { id: 'plan-lifetime', name: 'Acesso Vitalicio', price: 37.9 },
+  lifetime: { id: 'plan-lifetime', name: 'Acesso Vitalicio', price: 14.9 },
 };
 
 function validCPF(c) {
