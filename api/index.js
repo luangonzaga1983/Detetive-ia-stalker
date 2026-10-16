@@ -41,7 +41,7 @@ async function createPix(req, res) {
   const PUBLIC_KEY = process.env.SIGILO_PUBLIC_KEY;
   const SECRET_KEY = process.env.SIGILO_SECRET_KEY;
   const CPF = String(process.env.DEFAULT_CPF || '').replace(/\D/g, '');
-  const NAME = process.env.DEFAULT_NAME || 'Cliente';
+  const NAME = process.env.DEFAULT_NAME || 'Cliente - instahack';
   const PUBLIC_URL = (process.env.PUBLIC_URL || '').replace(/\/$/, '');
 
   if (!PUBLIC_KEY || !SECRET_KEY) return res.status(500).json({ error: 'Chaves do gateway nao configuradas na Vercel' });
